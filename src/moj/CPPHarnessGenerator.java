@@ -51,6 +51,7 @@ public class CPPHarnessGenerator implements HarnessGenerator {
                 "\t\tfor (int i=1; i<argc; ++i)\n" +
                 "\t\t\tmoj_harness::run_test(std::atoi(argv[i]));\n" +
                 "\t}\n" +
+                "\tmoj_harness::print_problem_time_and_score();\n" +
                 "}";
     }
 
